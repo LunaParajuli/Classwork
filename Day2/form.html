@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+  <form action="" method="" autocomplete="off">
+    <fieldset>
+      <legend><strong>User Information Form</strong></legend>
+      <label for="fname"><strong>First Name:</strong></label>
+      <input type="text" id="fname" placeholder="Enter your first name" required>
+      <br><br>
+      <label for="lname"><strong>Last Name:</strong></label>
+      <input type="text" id="lname" placeholder="Enter your last name" required>
+      <br><br>
+      <label for="email"><strong>Email:</strong></label>
+      <input type="email" id="email" placeholder="xys@gmail.com" required>
+      <br><br>
+      <label for="description"><strong>Description:</strong></label>
+      <textarea name="description" id="description" cols="60" rows="10"></textarea>
+      <br><br>
+      <label for="contact"><strong>Contact:</strong></label>
+      <input type="number" id="contact">
+      <br><br>
+      <label for="birthday"><strong>DOB:</strong></label>
+      <input type="datetime-local" name="birthday" id="birthday">
+      <br><br>
+      <label for="gender"><strong>Gender:</strong></label><br>
+      <input type="radio" name="gender" value="Male">Male
+      <input type="radio" name="gender" value="Female">Female
+      <input type="radio" name="gender" value="Other">Other
+      <br><br>
+      <label for="subject"><strong>Subject:</strong></label><br>
+      <input type="checkbox" name="subject" value="HTML">HTML
+      <input type="checkbox" name="subject" value="CSS">CSS
+      <input type="checkbox" name="subject" value="JavaScript">JavaScript
+      <input type="checkbox" name="subject" value="React">React
+      <input type="checkbox" name="subject" value="Python">Python
+      <br><br>
+      <label for="district"><strong>District:</strong></label><br>
+      <select name="district" id="district">
+        <option value="ktm">Kathmandu</option>
+        <option value="BKT">Bhaktapur</option>
+        <option value="Llt">Lalitpur</option>
+        <option value="pok">Pokhara</option>
+      </select>
+      <br><br>
+
+      <br><br>
+      <input type="range" name="range" id="range" min="0" max="200"><br>
+      <input type="submit" value="Submit">
+      &nbsp;
+      <input type="reset" value="Reset">
+    </fieldset>
+
+  </form>
+</body>
+
+</html>
