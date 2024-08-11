@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: darkcyan;
+      padding: 10px 20px;
+      align-items: center;
+    }
+
+    #search {
+      height: 40px;
+      width: 200px;
+      padding: 10px;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li a {
+      text-decoration: none;
+      color: white;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h1>Title</h1>
+    <input type="search" name="search" id="search" placeholder="You can search here">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Service</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>
