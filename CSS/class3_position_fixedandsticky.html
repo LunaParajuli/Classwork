@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed and Sticky Position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      height: 300px;
+      background-color: darkcyan;
+      text-align: center;
+      font-size: 40px;
+      padding: 30px;
+    }
+
+    nav {
+      height: 100px;
+      background-color: darkgoldenrod;
+      text-align: center;
+      font-size: 40px;
+      padding: 30px;
+      position: sticky;
+      top: 0;
+    }
+
+    main {
+      height: 800px;
+      background-color: darkkhaki;
+      text-align: center;
+      font-size: 40px;
+      padding: 30px;
+    }
+
+    footer {
+      height: 300px;
+      background-color: darkgoldenrod;
+      text-align: center;
+      font-size: 40px;
+      padding: 30px;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      background-color: darkred;
+      color: white;
+      font-weight: 900;
+      border: none;
+      border-radius: 10px;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>This is a header seccion.</p>
+  </header>
+  <nav>
+    <p>This is a nav section.</p>
+  </nav>
+  <main>
+    <p>This is a body section</p>
+  </main>
+  <footer>
+    <p>This is a footer section.</p>
+  </footer>
+  <button>
+    Message me
+  </button>
+</body>
+
+</html>
