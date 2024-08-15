@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 300px;
+  width: 350px;
+  margin: 10px auto;
+  background-color: beige;
+  position: relative;
+}
+
+.demo {
+  height: 130px;
+  width: 100%;
+  background: linear-gradient(to top right, #083452, aqua);
+  text-align: center;
+  font-size: 25px;
+  font-style: 700;
+  color: white;
+  text-justify: start;
+}
+
+
+.demo p {
+  padding-top: 30px;
+}
+
+.content {
+  height: 170px;
+  width: 100%;
+}
+
+.item {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+
+.container:hover .item {
+  display: block;
+}
