@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DropDown Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* padding: 20px; */
+      padding-left: 20px;
+      background-color: darkcyan;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      display: inline-block;
+      padding: 20px;
+
+    }
+
+    ul li:hover {
+      background-color: darkgoldenrod;
+
+    }
+
+    ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: absolute;
+      background-color: darkcyan;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <nav>
+    <h1>Title</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li class="menu"><a href="#">Product</a>
+        <ul class="dropdown">
+          <li class="drop-item"><a href="#">Laptop</a>
+            <ul class="sub-drop">
+              <li><a href="#">Acer</a>
+              <li><a href="#">Dell</a>
+              <li><a href="#">Mac</a>
+              <li><a href="#">MSI</a>
+            </ul>
+          </li>
+
+          <li><a href="#">Desktop</a></li>
+          <li><a href="#">Smart TV</a></li>
+          <li><a href="#">Smart Watch</a></li>
+          <li><a href="#">Clothes</a></li>
+        </ul>
+
+      </li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>
