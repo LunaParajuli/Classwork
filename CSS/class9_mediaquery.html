@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query(Responsice Design)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    /* for large screen */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: darkkhaki;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      padding: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 800;
+    }
+
+    i {
+      font-size: 30px;
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 10px 0;
+      background-color: bisque;
+    }
+
+    .demo {
+      width: 24%;
+      height: 150px;
+      background-color: darkcyan;
+    }
+
+
+
+    /* for medium screen */
+    @media screen and (max-width:992px) {
+      .demo {
+        width: 98%;
+        background-color: darkgoldenrod;
+      }
+
+      .one {
+        margin-top: 10px;
+      }
+
+      .mobilehidden {
+        display: none;
+      }
+
+      i {
+        display: block;
+      }
+    }
+
+
+
+    /* for small screen */
+    @media screen and(max-width:562px) {
+      .demo {
+        width: 98%;
+        background-color: darkgreen;
+      }
+
+      .small {
+        margin-top: 10px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h2>Title</h2>
+    <ul>
+      <li class="mobilehidden"><a href="#">Home</a></li>
+      <li class="mobilehidden"><a href="#">Home</a></li>
+      <li class="mobilehidden"><a href="#">Home</a></li>
+      <li class="mobilehidden"><a href="#">Home</a></li>
+      <li class="mobilehidden"><a href="#">Home</a></li>
+      <li><a href="#"><i class="bi bi-list"></i></a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="demo"></div>
+    <div class="demo small"></div>
+    <div class="demo one"></div>
+    <div class="demo one"></div>
+  </div>
+</body>
+
+</html>
