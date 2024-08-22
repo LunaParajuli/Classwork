@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Selector</title>
+  <style>
+    .content>p {
+      /* >p only include child not sub-child */
+      color: blueviolet;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <p>This is child paragraph</p>
+    <p>This is also child paragraph</p>
+    <span>
+      <p>This is sub-child paragraph</p>
+    </span>
+  </div>
+  <p>This is a sibling paragraph</p>
+</body>
+
+</html>
