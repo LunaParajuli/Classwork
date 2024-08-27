@@ -9,8 +9,34 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <style>
+    /* carousel */
+    .carousel-inner {
+      height: 720px;
+    }
+
+    /* footer */
+    .lii i {
+      font-size: 25px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      transition: all 2s;
+    }
+
+    .card-img img:hover {
+      transform: scale(1.5);
+    }
   </style>
 
 </head>
@@ -47,7 +73,7 @@
   </header>
 
   <!-- carasouel section -->
-  <div class="">
+  <div class=" mt-1">
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -59,13 +85,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="tour_images/Lukla.jpg" class="d-block w-100" alt="...">
+          <img src="tour_images/Lukla.jpg" class="d-block w-100 " alt="...">
         </div>
         <div class="carousel-item">
           <img src="tour_images/JANAKPUR.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="tour_images/kailash.avif" class="d-block w-100" alt="...">
+          <img src="tour_images/CHITLANG.jpg" class="d-block w-100 " alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -80,6 +106,188 @@
       </button>
     </div>
   </div>
+
+
+  <!-- card section -->
+  <div class="container d-flex  row-cols-1 row-cls-md-4 g-4 py-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <img src="tour_images/LUMBINI.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <img src="tour_images/JANAKPUR.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-image">
+          <img src="tour_images/parewa.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="tour_images/BHAKTAPUR.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- about us section -->
+  <div class="container">
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-5 order-md-2 mx-auto">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll
+            blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="tour_images/LUMBINI.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-5 order-md-2 mx-auto">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for
+            yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+          layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="tour_images/LUMBINI.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-5 order-md-2 mx-auto">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+            class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+          intended to be actually read, simply here to give you a better view of what this would look like with some
+          actual content. Your content.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="tour_images/LUMBINI.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+  </div>
+
+
+
+
+
+
+  <!-- footer section -->
+  <div class="container-fluid bg-dark mt-1">
+    <footer class="py-5 bg-dark">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column ">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-white text-white">About</a></li>
+          </ul>
+        </div>
+
+        <div class=" col-md-5 offset-md-1 mb-3 text-white ">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-white">
+        <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3 lii"><a href="#"><i class="bi bi-twitter-x text-white"></i></a></li>
+          <li class="ms-3 lii"><a href="#" width="24" height="24"><i
+                class="bi bi-instagram  text-white w-40 h-40 "></i></a>
+          </li>
+          <li class="ms-3 lii"><a href="#" width="24" height="24"><i class="bi bi-facebook text-white "></i></a></li>
+
+        </ul>
+      </div>
+    </footer>
+  </div>
+
 
 
 
