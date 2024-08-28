@@ -11,10 +11,14 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <link rel="shortcut icon"
+    href="https://marketplace.canva.com/EAFvDRwEHHg/1/0/1600w/canva-colorful-abstract-online-shop-free-logo-cpI8ixEpis8.jpg"
+    type="image/x-icon">
+
   <style>
     /* carousel */
     .carousel-inner {
-      height: 720px;
+      height: 600px;
     }
 
     /* footer */
@@ -22,9 +26,13 @@
       font-size: 25px;
     }
 
-    .card img {
+    .card {
+      width: 90%;
+    }
+
+    .card-img {
       width: 100%;
-      height: 100%;
+      height: 170px;
       overflow: hidden;
     }
 
@@ -45,10 +53,9 @@
   <header class="p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-            <use xlink:href="#bootstrap" />
-          </svg>
+        <img
+          src="https://marketplace.canva.com/EAFvDRwEHHg/1/0/1600w/canva-colorful-abstract-online-shop-free-logo-cpI8ixEpis8.jpg"
+          alt="img" height="50px" width="50px" class="rounded-circle">
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -88,10 +95,10 @@
           <img src="tour_images/Lukla.jpg" class="d-block w-100 " alt="...">
         </div>
         <div class="carousel-item">
-          <img src="tour_images/JANAKPUR.jpg" class="d-block w-100" alt="...">
+          <img src="tour_images/LUMBINI.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="tour_images/CHITLANG.jpg" class="d-block w-100 " alt="...">
+          <img src="tour_images/BHAKTAPUR.jpg" class="d-block w-100 " alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -109,31 +116,45 @@
 
 
   <!-- card section -->
-  <div class="container d-flex  row-cols-1 row-cls-md-4 g-4 py-5">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <div class="card-image">
-            <img src="tour_images/LUMBINI.jpg" class="card-img-top" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
+  <div class="container d-flex flex-wrap justify-content-evenly row-cols-1 row-cols-md-4 g-4 py-5">
+
+    <div class="col">
+      <div class="card">
+        <div class="card-image">
+          <img src="tour_images/PATAN.jpg" class="card-img-top" alt="...">
         </div>
       </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-image">
-            <img src="tour_images/JANAKPUR.jpg" class="card-img-top" alt="...">
-          </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. </p>
+        <button class="btn btn-success p-2 my-2">View Detail</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-image">
+          <img src="tour_images/BHAKTAPUR.jpg" class="card-img-top" alt="...">
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. </p>
+        <button class="btn btn-success p-2 my-2">View Detail</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-image">
+          <img src="tour_images/PATAN.jpg" class="card-img-top" alt="...">
         </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. </p>
+        <button class="btn btn-success p-2 my-2">View Detail</button>
       </div>
     </div>
     <div class="col">
@@ -141,31 +162,21 @@
         <div class="card-image">
           <img src="tour_images/parewa.jpg" class="card-img-top" alt="...">
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. </p>
+        <button class="btn btn-success p-2 my-2">View Detail</button>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="tour_images/BHAKTAPUR.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+
   </div>
 
 
 
   <!-- about us section -->
   <div class="container">
-
 
     <!-- START THE FEATURETTES -->
 
@@ -179,7 +190,7 @@
         </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="tour_images/LUMBINI.jpg" alt="">
+        <img src="tour_images/chit.jpg" alt="">
       </div>
     </div>
 
@@ -193,7 +204,7 @@
           layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="tour_images/LUMBINI.jpg" alt="">
+        <img src="tour_images/CHITLANG.jpg" alt="">
       </div>
     </div>
 
@@ -208,7 +219,7 @@
           actual content. Your content.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="tour_images/LUMBINI.jpg" alt="">
+        <img src="tour_images/CHITLANG.jpg" alt="">
       </div>
     </div>
 

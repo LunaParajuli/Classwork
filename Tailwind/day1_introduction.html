@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+
+  <!-- tailwind css link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f4d03f',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1 class="text-center bg-green-100 p-10 text-3xl hover:font-bold  hover:bg-green-500  hover:text-white">Heading One
+  </h1>
+
+  <h1 class="text-center  bg-blue-100 p-10 mt-10 text-3xl hover:font-bold hover:bg-black  hover:text-white">Heading Two
+  </h1>
+</body>
+
+</html>

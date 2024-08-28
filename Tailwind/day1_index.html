@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Index</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- tailwind css link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f4d03f',
+          }
+          // height: {
+          //   '100': '450',
+          // }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <!-- <nav></nav> ===semantic tag
+<div></div> === non-semantic tag -->
+
+
+  <nav class="flex bg-primary justify-between items-center px-20 py-5">
+    <div class="logo flex items-center">
+      <div class="nav-logo w-10 h-10 ">
+        <img
+          src="https://marketplace.canva.com/EAFvDRwEHHg/1/0/1600w/canva-colorful-abstract-online-shop-free-logo-cpI8ixEpis8.jpg"
+          alt="" class="w-full h-full rounded-full animate-pulse">
+      </div>
+      <span class="ms-4 text-gray-700 font-bold text-lg">Ecommerce</span>
+    </div>
+
+    <ul class="flex">
+      <li><a href="" class="pe-5 hover:underline">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline">Home</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- image slider section -->
+  <section class="img-section w-full h-100 relative">
+    <img src="https://c0.wallpaperflare.com/preview/447/552/983/ecommerce-online-shop-euro.jpg" alt="cover-image"
+      class="w-full h-full mt-1">
+
+    <div class="box-color bg-gray-300 opacity-50 absolute top-0 right-0 bottom-0  left-0"></div>
+    <i class="bi bi-arrow-left-circle-fill text-2xl absolute top-1/2 left-5 text-primary"></i>
+    <i class="bi bi-arrow-right-circle-fill text-2xl absolute top-1/2 right-5 text-primary"></i>
+
+  </section>
+</body>
+
+</html>
