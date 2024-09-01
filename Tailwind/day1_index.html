@@ -15,11 +15,11 @@
       theme: {
         extend: {
           colors: {
-            primary: '#f4d03f',
+            primary: '#a93226 ',
+          },
+          height: {
+            '100': '400',
           }
-          // height: {
-          //   '100': '450',
-          // }
         }
       }
     }
@@ -32,22 +32,33 @@
 <div></div> === non-semantic tag -->
 
 
-  <nav class="flex bg-primary justify-between items-center px-20 py-5">
+  <nav class="flex bg-primary justify-between items-center px-20 py-5 md:px-20 lg:px-20">
     <div class="logo flex items-center">
       <div class="nav-logo w-10 h-10 ">
         <img
           src="https://marketplace.canva.com/EAFvDRwEHHg/1/0/1600w/canva-colorful-abstract-online-shop-free-logo-cpI8ixEpis8.jpg"
-          alt="" class="w-full h-full rounded-full animate-pulse">
+          alt="" class="w-full h-full text-xl rounded-full animate-bounce sm:text-sm ">
       </div>
-      <span class="ms-4 text-gray-700 font-bold text-lg">Ecommerce</span>
+      <span class="ms-4 text-gray-700 font-bold text-xl ">Ecommerce</span>
     </div>
 
     <ul class="flex">
-      <li><a href="" class="pe-5 hover:underline">Home</a></li>
-      <li><a href="" class="pe-5 hover:underline">Home</a></li>
-      <li><a href="" class="pe-5 hover:underline">Home</a></li>
-      <li><a href="" class="pe-5 hover:underline">Home</a></li>
-      <li><a href="" class="pe-5 hover:underline">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline  hidden lg:block text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline  hidden lg:block text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline  hidden lg:block text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline  hidden lg:block text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline  hidden lg:block text-xl ">Home</a></li>
+      <li class="block lg:hidden"><a href=""></a>
+        <i class="bi bi-list text-3xl"></i>
+      </li>
+    </ul>
+
+    <ul class=" block lg:hidden ">
+      <li><a href="" class="pe-5 hover:underline text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline text-xl ">Home</a></li>
+      <li><a href="" class="pe-5 hover:underline text-xl ">Home</a></li>
     </ul>
 
   </nav>
@@ -58,8 +69,12 @@
       class="w-full h-full mt-1">
 
     <div class="box-color bg-gray-300 opacity-50 absolute top-0 right-0 bottom-0  left-0"></div>
-    <i class="bi bi-arrow-left-circle-fill text-2xl absolute top-1/2 left-5 text-primary"></i>
-    <i class="bi bi-arrow-right-circle-fill text-2xl absolute top-1/2 right-5 text-primary"></i>
+    <i class="bi bi-arrow-left-circle-fill text-4xl absolute top-1/2 left-5 text-primary"></i>
+    <i class="bi bi-arrow-right-circle-fill text-4xl absolute top-1/2 right-5 text-primary"></i>
+    <!-- <p class="absolute text-green-700 text-3xl bottom-80 left-80 font-bold ">Ecommerce Business
+    </p>
+    <h1 class="absolute text-red-800 text-6xl bottom-60 left-80 font-bold ">Keep it short and
+      simple</h1> -->
 
   </section>
 </body>
