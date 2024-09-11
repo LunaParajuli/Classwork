@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Case</title>
+</head>
+
+<body>
+  <h1>Switch Case</h1>
+
+  <script>
+    // let date = Number(prompt("Enter a date number:"))
+    // switch (date) {
+    //   case 0:
+    //     document.write("Sunday");
+    //     break;
+
+    //   case 1:
+    //     document.write("Monday");
+    //     break;
+
+    //   case 2:
+    //     document.write("Tuesday");
+    //     break;
+
+    //   case 3:
+    //     document.write("Wednesday");
+    //     break;
+
+    //   case 4:
+    //     document.write("Thursday");
+    //     break;
+
+    //   case 5:
+    //     document.write("Friday");
+    //     break;
+
+    //   case 6:
+    //     document.write("Saturday");
+    //     break;
+
+    //   default:
+    //     document.write("Invalid day");
+    // }
+
+
+
+
+    let userpin = 1234
+
+    let pin = Number(prompt("Enter a pin number:"))
+    switch (pin) {
+      case userpin:
+        document.write("Welcome to ATM Dashboard")
+        let number = Number(prompt("Choose a number \n 1.Fast Cash \n 2.Withdraw \n 3.Balance Enquiry \n 4.Cancel"))
+        switch (number) {
+          case 1:
+            let fast = Number("Choose a number \n 1. 1000 \n 2. 2000 \n 3. 5000 \n 4. 10000")
+            switch (fast) {
+              case 1:
+                alert("You have  withdrawn Rs.1000")
+                break;
+
+              case 2:
+                alert("You have  withdrawn Rs.2000")
+                break;
+
+              case 3:
+                alert("You have  withdrawn Rs.5000")
+                break
+
+              case 4:
+                alert("You have  withdrawn Rs.10000")
+                alert("Thank you for using ATM Service.")
+                break
+
+              default:
+                alert("Invalid number")
+                break
+            }
+            break
+        }
+      case 2:
+        alert("Withdraw Section")
+        break
+
+      case 3:
+        alert("Balance Enquiry Section")
+        break
+
+      case 4:
+        alert("Cancel ATM Service")
+        break
+
+      default:
+        alert("Invalid number")
+        break
+    }
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
