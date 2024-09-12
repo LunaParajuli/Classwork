@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Method</title>
+</head>
+
+<body>
+  <h1>String Method</h1>
+
+  <script>
+    let text = 'Welcome to dursikshya.We are doing javascript programming language and javascript also used for react.'
+    document.write(`${text} <br>`)
+
+    //indexing
+    document.write(`${text[101]} <br>`)
+
+    //uppercase
+    document.write(`${text.toUpperCase()} <br>`)
+
+    //Lowercase
+    document.write(`${text.toLowerCase()} <br>`)
+
+    //length
+    document.write(`${text.length} <br>`)
+
+    //index of first word
+    document.write(`${text.indexOf('javascript')} <br>`)
+
+    //index of last word
+    document.write(`${text.lastIndexOf('javascript')} <br>`)
+
+    //split
+    document.write(`${text.split('javascript')} <br>`)
+
+
+
+    //charAT
+    document.write(`${text.charAt(6)} <br>`)
+
+    //charCode At => The charCodeAt() method returns the unicode of the character at a given position in a string:
+    document.write(`${text.charCodeAt(4)} <br>`)
+
+    //at => The at() method returns an indexed element from a string:
+    document.write(`${text.at(4)} <br>`)
+
+    //substring => The substring() method extract a part of a string and returns the extracted parts in a new string:
+    document.write(`${text.substring(7, 13)} <br>`)
+
+    //substr =>The substr() method extract a part of a string and returns the extracted parts in a new string:  --- similar to slice
+    document.write(`${text.substr(7, 8)} <br>`)
+
+    //concat => The concat() method can be used instead of the plus operator.
+    document.write(`${text.concat()} <br>`)
+
+    //trim =>The trim() method removes whitespace from both sides of a string
+    document.write(`${text.trim()} <br>`)
+
+    //trimStart => The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+    //trimEnd => The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+
+    //padStart() and padEnd() to support padding at the beginning and at the end of a string.
+
+    /*
+    The repeat() method returns a string with a number of copies of a string.
+    The repeat() method returns a new string.
+    The repeat() method does not change the original string.
+    */
+    document.write(`${text.repeat(3)} <br>`)
+
+
+    //replace => The replace() method replaces a specified value with another value in a string:
+    document.write(`${text.replace('javascript', 'React')} <br>`)
+
+    //replaceAll => ES2021 intoduced the string method replaceAll().
+    document.write(`${text.replaceAll('javascript', 'Python')} <br>`)
+  </script>
+</body>
+
+</html>
