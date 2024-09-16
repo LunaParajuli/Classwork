@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods</title>
+</head>
+
+<body>
+  <h1>Array Methods</h1>
+
+  <script>
+    let p_language = ['Python', 'Javascript', 'PHP', 'Java', 'C++']
+    //indexing
+    document.write(p_language[0], "<br>")
+    //length
+    document.write(p_language.length, "<br>")
+
+    //push()=> ADD element from the last index
+    p_language.push('Go lang')
+    document.write(p_language, "<br>")
+
+    //pop()=> Remove element from the last index
+    p_language.pop('Go lang')
+    document.write(p_language, "<br>")
+
+    //unshift() - to add the element from the first index
+    p_language.unshift('Ruby')
+    document.write(p_language, "<br>")
+
+    //shift() - to Remove the element from the first index
+    p_language.shift('Ruby')
+    document.write(p_language, "<br>")
+
+
+    //splice
+    p_language.splice(2, 0, "HELLO")
+    document.write(p_language, "<br>")
+
+    // p_language.splice(3, 1, "HI")
+    // document.write(p_language, "<br>")
+
+    // p_language.splice(3, 2, "BYE")
+    // document.write(p_language, "<br>")
+
+    p_language.splice(3, 3, "BYE")
+    document.write(p_language, "<br>")
+
+
+
+    //sort()--> arrange the elements in ascending order
+    document.write(p_language.sort(), "<br>")
+
+    //reverse()--> arrange the elements in reverse order (NOTE:This does not bring in descending only reverse)
+    document.write(p_language.reverse(), "<br>")
+
+    //concat()=>to join the two array
+    m_language = ['HTML', 'CSS']
+    document.write(p_language.concat(m_language), "<br>")
+
+
+
+
+  </script>
+</body>
+
+</html>

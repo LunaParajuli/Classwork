@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Methods</title>
+</head>
+
+<body>
+  <h1>Number Methods</h1>
+
+  <div>
+    <h3>Instance and Static Methods</h3>
+    <pre>
+      A static method belongs to the class itself and can be called directly on the class, 
+      While an instance method operates on instances (objects) of the class and can access instance variables.
+    </pre>
+    <script>
+
+      let y = 123.789
+      let z = 1235
+
+
+      //toString() => converts number into strings
+      document.write(`${y.toString()} <br>`)
+
+      //toExponential() =>	Returns a number written in exponential notation
+      document.write(`${y.toExponential()} <br>`)
+
+      //toFixed() => Returns a number written with a number of decimals
+      //The toFixed() method rounds a number to a given number of digits.
+      document.write(`${y.toFixed()} <br>`)
+      document.write(`${y.toFixed(7)} <br>`)
+
+      // toPrecision() =>	Returns a number written with a specified length
+      document.write(`${y.toPrecision(4)} <br>`)
+      document.write(`${z.toPrecision(5)} <br>`)
+
+      // valueOf() =>	Returns a number as a number
+      document.write(`${y.valueOf()} <br>`)
+      document.write(`${(123).valueOf()} <br>`)
+      document.write(`${(y + 3.2).valueOf()} <br>`)
+
+    </script>
+  </div>
+
+  <div>
+    <h3>Number Methods</h3>
+
+    <script>
+      //Number() => Converts variables into numbers
+      let x = true
+      document.write(`${x} <br>`)
+      document.write(`${Number(x)} <br>`)
+
+    </script>
+  </div>
+
+</body>
+
+</html>
