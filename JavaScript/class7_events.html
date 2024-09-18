@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+</head>
+
+<body>
+  <h1>Events</h1>
+  <pre>
+    Events are the interaction with web pages.
+    Example:- onclick      onsubmit  onload          onmouseout
+              ondblclick    onload    onmouseover     onkeydown    onkeyup
+  </pre>
+
+  <button onclick="demo()" ondblclick="remove()">Click me</button>
+
+  <h1 id="text"></h1>
+
+  <input type="password" name="password" id="password" onkeyup="pwd()">
+  <p id="pwdshow"></p>
+
+
+  <script>
+    //events are the interaction with web pages. 
+
+    const demo = () => {
+      const date = new Date()
+      const text = document.getElementById('text')
+      text.innerHTML = `${date}`
+    }
+
+    const remove = () => {
+      document.getElementById('text').innerHTML = ``
+    }
+
+    const pwd = () => {
+      const data = document.getElementById('password').value
+      document.getElementById('pwdshow').innerHTML = `${data}`
+      document.getElementById('pwdshow').style.color = 'blue'
+    }
+  </script>
+
+</body>
+
+</html>

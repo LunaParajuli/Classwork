@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+
+<body>
+  <h1>Functions</h1>
+  <pre>
+    Function is a block of code which is used to perform particular task and it can be reused again and again.
+  
+    STRUCTURE OF FUNCTION
+
+    //definition of function --first step
+    function function_name{
+
+    }
+    //call the function -- to execute the function
+    function_name()
+
+  </pre>
+
+
+  <script>
+    function addition() {
+      document.write(5 + 7, "<br>")
+    }
+    addition()
+
+
+    //function with arguments/parameter
+    function area(l, h) {  //parameter
+      document.write(l * h, "<br>")
+
+    }
+    area_office_room = area(100, 200) //arguments
+    area_lab_room = area(56, 2000)
+
+
+    //function with return types
+
+    function volume(l, b, h) {
+      return l * b * h
+    }
+    let l = Number(prompt("The length of object is:"))
+    let b = Number(prompt("The breadth of object is:"))
+    let h = Number(prompt("The height of object is:"))
+
+    document.write("The volume of new object is: ", volume(l, b, h))
+
+    
+    //arrow function
+
+    // const volume = (l, b, h) => {
+    //   return l * b * h
+    // }
+    // document.write("The volume of new object is ", volume(20, 30, 40))
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
