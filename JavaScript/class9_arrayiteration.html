@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Iteration</title>
+</head>
+
+<body>
+  <h1>Array Iteration</h1>
+
+  <script>
+    //for each
+    let num = [1, 2, 3, 4, 5]
+    let newarray = num.forEach(n => {
+      document.write(`${n ** 2} <br>`)
+    })
+
+    //map
+    let another_num = [1, 2, 3, 4, 5, 6]
+    let anotherarray = another_num.map(n => {
+      return n ** 2
+    })
+    document.write(`${anotherarray} <br>`)
+
+
+    //filter()
+    let price = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000]
+    let filter_price = price.filter(p => {
+      return p > 2000 && p < 7000
+    })
+    document.write(filter_price, "<br>")
+
+
+    //reduce
+    let product_price = [1, 2, 3, 4, 5]
+    let total_price = product_price.reduce((initial, current) => {
+      return initial + current
+    }, 0)
+    document.write(total_price, "<br>")
+
+
+    //every
+    let every_condition = product_price.every(n => {
+      return n > 2
+    })
+    document.write(every_condition, "<br>")
+
+
+    //some
+    let some_condition = product_price.some(n => {
+      return n > 2
+    })
+    document.write(some_condition, "<br>")
+
+
+    //find => return first element of item which meets the given condition
+    let find_condition = product_price.find(n => {
+      return n > 2
+    })
+    document.write(find_condition, "<br>")
+
+
+    //include
+    //spread
+
+  </script>
+
+
+
+
+</body>
+
+</html>

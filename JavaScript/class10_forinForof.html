@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForIn ForOf </title>
+</head>
+
+<body>
+  <h1>ForIn ForOf</h1>
+
+  <script>
+
+
+    const student_detail = {
+      first_name: "Hari",
+      last_name: "Shrestha",
+      address: "Kathmandu",
+      email: "hari@gmail.com",
+      education: "Master in IT"
+    }
+
+    //For In
+    for (i in student_detail) {
+      document.write(student_detail[i], "<br>")
+    }
+
+    //For Of
+    // const number = [1, 2, 3, 4, 5]
+    // for (value of number) {
+    //   document.write(`${value} <br>`)
+    // }
+
+    
+    const number = "We are student of Full Stack"
+    for (value of number) {
+      document.write(`${value} <br>`)
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
