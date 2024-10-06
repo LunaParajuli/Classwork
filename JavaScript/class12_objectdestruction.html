@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Destruction</title>
+</head>
+
+<body>
+
+  <script>
+    const student_detail = {
+      name: "Hari Shrestha",
+      address: "Kathmandu",
+      education: "Master in IT",
+      occupation: "Web Developer",
+      email: "hari@gmail.com"
+    }
+    const showStudent = ({ name, address, education, occupation }) => {
+      return `The student name is ${name} from ${address} currently student is enrolling in ${education}`
+    }
+
+    const student = showStudent(student_detail)
+    document.write(student)
+
+  </script>
+</body>
+
+</html>

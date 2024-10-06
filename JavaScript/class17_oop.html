@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP</title>
+</head>
+
+<body>
+
+  <script>
+    //class is a blue print of an object
+    class Student {
+      constructor(firstname, lastname, section) {
+        //initialize automatically when object is created.
+        this.firstname = firstname
+        this.lastname = lastname
+        this.section = section
+        return `${this.firstname}`
+
+        document.write(`${firstname} <br>`)
+      }
+
+      //must be call to initialize
+      display() {
+        return `Student name is ${this.firstname}  ${this.lastname}. Section number is ${this.section}`
+      }
+    }
+    //instance of a class
+    const obj_student = new Student("Ram", "Tamang", "Section-A")
+    document.write(obj_student.display())
+  </script>
+</body>
+
+</html>

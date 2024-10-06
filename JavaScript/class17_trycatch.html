@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try/Catch</title>
+</head>
+
+<body>
+
+  <script>
+    //try/catch is used handle the error which breaks our normal flow of code.
+
+    // const num = 5
+    // document.write(`${num} <br>`)
+    // const num2 = 10
+    // try {
+    //   const num3 = pprompt("Enter a number:")
+    // }
+    // catch (err) {
+    //   document.write(`${err} <br>`)
+    // }
+    // document.write(`${num2} <br>`)
+    // document.write(`${num3} <br>`)
+
+    //throw
+    try {
+      const x = parseInt(prompt("Enter a first number:"))
+
+      const y = parseInt(prompt("Enter a second number:"))
+
+      if (y == 0) {
+        throw ("Zero cannot divide other number")
+      }
+      else {
+        document.write(x / y)
+      }
+    }
+    catch (err) {
+      document.write(err)
+    }
+
+
+  </script>
+</body>
+
+</html>

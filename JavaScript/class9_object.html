@@ -12,6 +12,18 @@
 
   <h2></h2>
   <button>Click</button>
+  <table border="1">
+    <th>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Address</td>
+    <td>Email</td>
+    <td>Education</td>
+    </th>
+    <tr>
+
+    </tr>
+  </table>
 
   <script>
     const student_detail = {
@@ -21,11 +33,27 @@
       email: "hari@gmail.com",
       education: "Master in IT"
     }
-    document.write(student_detail.first_name, "<br>")
+    // document.write(student_detail.first_name, "<br>")
 
-    document.querySelector('button').addEventListener("click", () => {
-      document.querySelector('h2').innerText = `${student_detail.address}`
-    })
+    // document.querySelector('button').addEventListener("click", () => {
+    //   document.querySelector('h2').innerText = `${student_detail.address}`
+    // })
+
+
+
+    for (i in student_detail) {
+      document.querySelector('tr').innerText = `
+      <td>${student_detail.first_name}</td>
+      <td>${student_detail.last_name}</td>
+      <td>${student_detail.address}</td>
+      <td>${student_detail.email}</td>
+      <td>${student_detail.education}</td>
+      `
+    }
+
+
+
+
 
 
 

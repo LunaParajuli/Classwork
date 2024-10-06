@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch</title>
+</head>
+
+<body>
+  <h1></h1>
+  <script>
+    fetch(`https://fakestoreapi.com/products`)
+      .then(res => res.json())
+      // .then(products => console.log(products))
+      .then(products => products.map((product) => (
+        // console.log(product.title)
+        // document.querySelector('h1').innerHTML = product.title
+
+        document.write(`<li>${product.title}</li> <br> `)
+
+      )))
+      .catch(err => console.log(err))
+
+
+  </script>
+</body>
+
+</html>

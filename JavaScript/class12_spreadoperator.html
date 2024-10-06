@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread and Rest Operator</title>
+</head>
+
+<body>
+  <script>
+    //spread operator -> combine more than two arrays into single array
+    const odd_num = [1, 3, 5, 7, 9]
+    const even_num = [0, 2, 4, 6, 8]
+    const regular_num = [11, 12, 14]
+
+    const new_num = [...odd_num, ...even_num, ...regular_num]
+    console.log(new_num)
+
+
+    //rest operator
+    const show = (data) => {
+      return ['python', ...data]
+    }
+    dataShow = show(['javascript', 'react', 'html'])
+    console.log(dataShow)
+  </script>
+</body>
+
+</html>
