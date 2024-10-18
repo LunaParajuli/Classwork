@@ -1,4 +1,5 @@
 import React from 'react'
+import Btn from './Btn'
 
 export const Third = () => {
   return (
@@ -17,6 +18,11 @@ export const Third = () => {
         </tr>
 
       </table>
+
+      <Btn btn_content='Third' />
+
+
+
     </>
   )
 }

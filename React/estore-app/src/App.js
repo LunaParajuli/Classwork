@@ -3,18 +3,21 @@ import './App.css';
 import First from './components/First'
 import Second from './components/Second'
 import { Test, Third } from './components/Third'
+import Myroute from './Myroute';
+
+
 
 
 function App() {
   return (
     <>
-      <br />
-      <First />
-      <br />
 
-      <Second />
-      <Third />
-      <Test />
+      <Myroute />
+
+
+
+
+
 
     </>
 
