@@ -6,6 +6,7 @@ import { Test, Third } from './components/Third'
 import Layout from './components/Layout'
 import Homepage from './pages/Homepage'
 import Productpage from './pages/Productpage'
+import ProductDetail from './pages/ProductDetail'
 
 
 
@@ -23,6 +24,7 @@ const Myroute = () => {
           <Route path='/' element={<Layout />}>
             <Route index element={<Homepage />} />
             <Route path='product' element={<Productpage />} />
+            <Route path='productdetail/:productId' element={<ProductDetail />} />
           </Route>
 
         </Routes>
