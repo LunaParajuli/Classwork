@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Cards from '../components/usercomponents/Cards'
 import axios from 'axios'
+import { Helmet } from "react-helmet";
 
 const Homepage = () => {
   const [product, setProduct] = useState([])
@@ -15,6 +16,13 @@ const Homepage = () => {
 
   return (
     <>
+
+      <Helmet>
+        <title>Estore-Homepage</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
+
+
 
       <div id="default-carousel" className="relative w-full" data-carousel="slide">
 

@@ -7,6 +7,10 @@ import Layout from './components/Layout'
 import Homepage from './pages/Homepage'
 import Productpage from './pages/Productpage'
 import ProductDetail from './pages/ProductDetail'
+import Cart from './pages/Cart'
+import Register from './pages/Register'
+
+
 
 
 
@@ -25,6 +29,10 @@ const Myroute = () => {
             <Route index element={<Homepage />} />
             <Route path='product' element={<Productpage />} />
             <Route path='productdetail/:productId' element={<ProductDetail />} />
+            <Route path='cart/:productId' element={<Cart />} />
+            <Route path='register' element={<Register />} />
+
+
           </Route>
 
         </Routes>
