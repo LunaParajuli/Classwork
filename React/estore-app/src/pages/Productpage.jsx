@@ -19,7 +19,7 @@ const Productpage = () => {
     <>
 
       <Helmet>
-        <title>Estore Productpage</title>
+        <title>Estore|Productpage</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
 

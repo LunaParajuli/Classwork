@@ -37,7 +37,7 @@ const Header = () => {
             </button>
 
             <div className=" content-center ml-5 hover:text-red-600">
-              <Link to="#">
+              <Link to="/cart/:productId">
                 <i class="bi bi-cart4 text-3xl"></i>
               </Link>
 

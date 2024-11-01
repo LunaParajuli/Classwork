@@ -18,7 +18,7 @@ const Homepage = () => {
     <>
 
       <Helmet>
-        <title>Estore-Homepage</title>
+        <title>Estore|Homepage</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
 

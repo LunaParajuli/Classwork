@@ -9,23 +9,23 @@ const Register = () => {
     <>
 
       <Helmet>
-        <title>Estore Register Page</title>
+        <title>Estore|RegisterPage</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
 
       <h1 className="text-center font-bold text-3xl my-5">Registration Form</h1>
       <Formik
-        initialValues={{ fname: "", lname: "", email: "", password: "", conformpassword: "" }}
+        initialValues={{ fname: "", lname: "", email: "", password: "", cpwd: "" }}
         validationSchema={Yup.object({
 
           fname: Yup.string()
-            .matches(/>([a-zA-Z])+$$/, "Only contain alphabets")
+            .matches(/^([a-zA-Z])+$/, "Only contain alphabets")
             .max(20, "Not more than twenty characters")
             .required("First name is mandatory"),
 
 
           lname: Yup.string()
-            .matches(/>([a-zA-Z])+$$/, "Only contain alphabets")
+            .matches(/^([a-zA-Z])+$/, "Only contain alphabets")
             .max(20, "Not more than twenty characters")
             .required("Last name is mandatory"),
 
@@ -41,7 +41,7 @@ const Register = () => {
 
 
 
-          conformpassword: Yup.string()
+          cpwd: Yup.string()
             .required("Conform your password")
             .oneOf([Yup.ref('password'), null], "Must match with password")
 
@@ -64,7 +64,7 @@ const Register = () => {
 
             <div className="mb-2">
               <label htmlFor="lname" className="block mb-2 text-sm font-medium">Last Name:</label>
-              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="fname" placeholder="Enter your last name" type="text" />
+              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="lname" name="lname" placeholder="Enter your last name" type="text" />
               <ErrorMessage name='lname'>
                 {mgs => (<div style={{ color: 'red' }}>{mgs}</div>)}
               </ErrorMessage>
@@ -73,7 +73,7 @@ const Register = () => {
 
             <div className="mb-2">
               <label htmlFor="email" className="block mb-2 text-sm font-medium">Email:</label>
-              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="fname" placeholder="xyz@gmail.com" type="email" />
+              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="email" name="email" placeholder="xyz@gmail.com" type="email" />
               <ErrorMessage name='email'>
                 {mgs => (<div style={{ color: 'red' }}>{mgs}</div>)}
               </ErrorMessage>
@@ -82,7 +82,7 @@ const Register = () => {
 
             <div className="mb-2">
               <label htmlFor="password" className="block mb-2 text-sm font-medium">Password:</label>
-              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="fname"
+              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="password" name="password"
                 placeholder="******"
                 type="password" />
               <ErrorMessage name='password'>
@@ -93,18 +93,18 @@ const Register = () => {
 
 
             <div className="mb-2">
-              <label htmlFor="conformpassword" className="block mb-2 text-sm font-medium">ConformPassword:</label>
-              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="fname"
+              <label htmlFor="cpwd" className="block mb-2 text-sm font-medium">ConfirmPassword:</label>
+              <Field className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="cpwd" name="cpwd"
                 placeholder="******"
                 type="password" />
-              <ErrorMessage name='conformpassword'>
+              <ErrorMessage name='cpwd'>
                 {mgs => (<div style={{ color: 'red' }}>{mgs}</div>)}
               </ErrorMessage>
             </div>
 
 
             <div className="mb-5">
-              <button className="bg-blue-500 w-24 h-9 rounded-md text-white font-semibold ">Submit</button>
+              <button className="bg-blue-500 py-2 px-10 rounded-lg text-white font-semibold ">Submit</button>
             </div>
 
 

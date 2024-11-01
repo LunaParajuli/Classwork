@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
+import { Helmet } from "react-helmet";
 
 const Cart = () => {
 
@@ -53,7 +54,7 @@ const Cart = () => {
     <>
 
       <Helmet>
-        <title>Estore Cart</title>
+        <title>Estore|Cart</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
 
@@ -61,7 +62,7 @@ const Cart = () => {
       <ToastContainer theme='colored' position='top-center' />
       <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-          <h2 className="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Shopping Cart</h2>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl ">Shopping Cart</h2>
 
           <div className="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
             <div className="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
@@ -71,10 +72,10 @@ const Cart = () => {
                   : (
                     <>
                       {products.map((item) => (
-                        <div key={item.id} className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
+                        <div key={item.id} className="rounded-lg border border-gray-400 bg-white p-4 shadow-md shadow-gray-300 hover:shadow-blue-300 hover:translate-y-2 dark:border-gray-700 dark:bg-gray-800 md:p-6">
                           <div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-                            <Link to="#" className="shrink-0 md:order-1">
-                              <img className="h-20 w-20 dark:hidden" src={item.image} alt="imac image" />
+                            <Link to="#" className="shrink-0 md:order-1 ">
+                              <img className="h-20 w-20 dark:hidden hover:scale-125" src={item.image} alt="imac image" />
                               <img className="hidden h-20 w-20 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/iphone-dark.svg" alt="imac image" />
                             </Link>
 
