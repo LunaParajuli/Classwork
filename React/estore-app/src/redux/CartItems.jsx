@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import ChangeItems from './ChangeItems'
 
 const CartItems = () => {
 
@@ -7,7 +8,8 @@ const CartItems = () => {
 
   return (
     <>
-      <h1>The number of product present in a cart is {data.cartData}</h1>
+      <h1 className="text-center">The number of product present in a cart is {data.cartData}</h1>
+      <ChangeItems />
     </>
   )
 }

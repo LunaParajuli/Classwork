@@ -4,5 +4,22 @@ const initialData = {
 }
 
 export const CartReducer = (state = { initialData }, action) => {
-  return state
+
+  switch (action.type) {
+
+    case 'ADD_TO_CART':
+      return {
+        cartData: state.cartData + 1
+      }
+
+
+    default:
+      return state
+  }
+
+
+
+
+
+
 }
