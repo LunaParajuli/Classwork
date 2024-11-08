@@ -3,7 +3,7 @@ const initialData = {
 
 }
 
-export const CartReducer = (state = { initialData }, action) => {
+export const CartReducer = (state = initialData, action) => {
 
   switch (action.type) {
 
